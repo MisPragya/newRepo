@@ -21,6 +21,7 @@ public class AddServlet extends HttpServlet {
 		int b= Integer.parseInt(req.getParameter("num2"));
 			        HttpSession session =req.getSession();
 		int x=a+b;
+		int c;
 	        session.setAttribute("x", x);
       // session.setAttribute("x", 12);
 //Cookie cookie = new Cookie("x" ,x+""); //string has to be passed so we are concatenating
